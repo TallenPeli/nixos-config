@@ -22,6 +22,7 @@
     curl
     fastfetch
     tree
+    tmux
 
     # Zen browser
     inputs.zen-browser.packages.${pkgs.system}.default
@@ -46,7 +47,7 @@
   users.users.tallen = {
     isNormalUser = true;
     shell = pkgs.fish;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" ];
   };
 
   nix.settings = {
